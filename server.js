@@ -4,7 +4,7 @@ let app = express();
 // Set port
 let port = process.env.PORT || 80;
 
-app.use(express.static(__dirname + "/str/public"));
+app.use(express.static(__dirname + "/public"));
 
 // Routes
 
