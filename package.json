@@ -1,0 +1,26 @@
+{
+  "name": "fupilio",
+  "version": "1.0.0",
+  "description": "A website made by 21 NaN",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.3",
+    "joi": "^13.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Johk3/fupilio.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Johk3/fupilio/issues"
+  },
+  "homepage": "https://github.com/Johk3/fupilio#readme"
+}
