@@ -14,7 +14,7 @@ app.get("/", (req, res) =>{
 	res.render("index");
 });
 app.get("/contact", (req, res) =>{
-	res.sendfile("public/contact.html");
+	res.sendfile(contactaddr);
 });
 app.get("/message*/", (req, res) =>{
 	if (!(url.parse(req.url, true).query.name)){
@@ -48,7 +48,7 @@ app.get("/message*/", (req, res) =>{
 			from: '"Fupilio" < legendaryemailbot@gmail.com',
 			to: 'user3610@protonmail.com',
 			subject: `Customer ${name} contacted you"`,
-			text: `User ${name} contacted you with the email ${email}His message is ${message}`
+			text: `User ${name} contacted you with the email ${email} His message is ${message}`
 		};
 		transporter.sendMail(HelperOptions, (error, info) => {
 			if(error){
