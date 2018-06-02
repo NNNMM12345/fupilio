@@ -2,33 +2,29 @@
 	font-family: "Do Hyeon";
 	font-size: 350%;
 }
-.e{
-	color: #F75E5E;
-}
-.p{
-	color: #5EC6F7;
-}
-.l{
-	color: #F75E5E;
-}
-.i{
-	color: #68FF4A;
-}
-.o{
-	color: #F5F75E;
-}
 p{
 	font-family: "Roboto";
 	font-size: 150%;
 }
+.newline{
+	display: block;
+}
 body{
-	background: #343233;
-	color: white;
-	margin: 0;
+	background: white;
 }
-nav{
-	font-family: "Roboto";
+.smaller{
+	height: 225px;
+	width: 100%;
 }
-.theColor{
-	color: #00c3ff;
+.jumbotron-heading{
+	font-family: 'Roboto-light', sans-serif;
+	font-weight: 300;
+	text-align: center !important;
+}
+.container{
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
 }
