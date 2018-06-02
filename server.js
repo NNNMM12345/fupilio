@@ -2,6 +2,7 @@ var express = require("express");
 var app = express();
 var nodemailer = require("nodemailer");
 var url = require('url');
+var contactaddr = process.env.CONTACTADDR || "public/contact.html"
 
 // Set port
 var port = process.env.PORT || 1234;
