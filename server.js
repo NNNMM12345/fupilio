@@ -4,7 +4,7 @@ var nodemailer = require("nodemailer");
 var url = require('url');
 
 // Set port
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 1234;
 
 app.use(express.static(__dirname + "/public"));
 // Routes
