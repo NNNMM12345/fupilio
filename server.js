@@ -3,6 +3,7 @@ var app = express();
 var nodemailer = require("nodemailer");
 var url = require('url');
 var contactaddr = process.env.CONTACTADDR || "public/contact.html"
+var blogaddr = process.env.BLOGADDR || "public/blog.html"
 
 // Set port
 var port = process.env.PORT || 1234;
@@ -12,6 +13,9 @@ app.use(express.static(__dirname + "/public"));
 
 app.get("/", (req, res) =>{
 	res.render("index");
+});
+app.get("/blog", (req, res) =>{
+	res.sendfile(blogaddr)
 });
 app.get("/contact", (req, res) =>{
 	res.sendfile(contactaddr);
